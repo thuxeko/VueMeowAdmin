@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer class="deep-purple accent-4" dark width="260" app>
+  <v-navigation-drawer dark width="260" app>
     <v-list expand nav>
       <v-list-item v-for="item in items" :key="item.title" :to="item.to">
         <v-list-item-icon>
@@ -19,7 +19,8 @@ export default {
   data() {
     return {
       items: [
-        { title: "Tổng hợp ảnh", icon: "mdi-image", to: "/" },
+        { title: "Trang chủ", icon: "mdi-image", to: "/" },
+        { title: "Tổng hợp ảnh", icon: "mdi-image", to: "/listiv" },
         { title: "About", icon: "mdi-image", to: "/about" },
         { title: "Home", icon: "mdi-image", to: "/home" },
       ],

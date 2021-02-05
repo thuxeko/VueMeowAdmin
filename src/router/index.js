@@ -9,6 +9,11 @@ const routes = [
     component: () => import('@/views/Index'),
     children: [
       {
+        name: 'ListIV',
+        path: '/listiv',
+        component: () => import('@/views/component/IV')
+      },
+      {
         name: 'Home',
         path: '/home',
         component: () => import('@/views/component/Home')
